@@ -1,0 +1,47 @@
+<h1 style="text-align:center;background-color: burlywood;">Student List</h1>
+
+<a mat-raised-button color="primary" class="right" routerLink = "/student-details">Add Student Details</a>
+<div *ngIf="isDelete">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <div *ngIf="isDelete">
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+  
+   
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef> First Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+      <button mat-raised-button color="warn">Warn</button>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef> Last Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="mobNo">
+      <th mat-header-cell *matHeaderCellDef> Mobile Number </th>
+      <td mat-cell *matCellDef="let element"> {{element.mobNo}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef> </th>
+       <td mat-cell *matCellDef="let element; let i = index;">
+            <button mat-icon-button (click)="delete(i)" matTooltip="Remove this row">
+                <mat-icon>delete</mat-icon>
+              </button>
+               </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </div>     
+  </table>
+  </div>
+  <app-student-details (callFun)="addData($event)" *ngIf="!showStudent"></app-student-details>

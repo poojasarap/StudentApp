@@ -1,0 +1,32 @@
+.example-radio-button{margin-left: 7px;}
+mat-grid-tile {
+  background:#fafafa;
+}
+.width-50{width: 49%;}
+.ml-1{margin-left: 1%;}
+.ml-2{margin-left: 2%;}
+.width-100{width: 100%;}
+.width-25{width: 25%;}
+.form-element {
+  padding: 5px 0px 25px 2px;
+  width: 100%;
+}
+
+.button {
+  width: 166px;
+  height: 36px;
+}
+
+.cancel {
+  margin: 10px;
+}
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}

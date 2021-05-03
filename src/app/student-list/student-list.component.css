@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+  }
+  .right{
+    text-align: center;
+    display: inline-block;
+    float: right;
+    margin: 10px;
+  }

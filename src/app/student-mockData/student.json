@@ -1,0 +1,30 @@
+[
+  {
+    "position": 1,
+    "firstName": "Ricky",
+    "lastName": "Smith",
+    "mobNo": "11-123-4111",
+    "dob": "12-03-1993"
+  },
+  {
+    "position": 2,
+    "firstName": "Jordan",
+    "lastName": "Buttler",
+    "mobNo": "11-123-4111",
+    "dob": "12-03-1993"   
+  },
+  {
+    "position": 3,
+    "firstName": "Sam",
+    "lastName": "Jason",
+    "mobNo": "11-123-4111",
+    "dob": "12-03-1993"  
+  },
+  {
+    "position": 4,
+    "firstName": "Alan",
+    "lastName": "Joy",
+    "mobNo": "11-123-4111",
+    "dob": "12-03-1993"
+  }
+]
